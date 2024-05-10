@@ -38,18 +38,13 @@ const crearDeck = () => {
         }
     }
 
-    // Mostrar baraja de cartas
-    // console.log( deck );
-
     // Barajar cartas usando un algoritmo
     // algoritmo de Fisher-Yates que es el que se usa típicamente para barajar en los juegos de azar (por lo que pude investigar).
     // const barajar=(arreglo)=>{     let i = arreglo.length;     while(--i>0){         let randIndex = Math.floor(Math.random() * (i + 1));         [arreglo[randIndex], arreglo[i]] = [arreglo[i], arreglo[randIndex]];     }     return arreglo; }
 
     // Barajar cartas usando una librería
     deck = _.shuffle( deck );
-    // Mostrar baraja de cartas revueltas
-    console.log( deck );
-
+    
     return deck;
 }
 
@@ -66,9 +61,6 @@ const pedirCarta = () => {
     // Remover última carta de la baraja
     const carta = deck.pop();
 
-    // console.log( deck );
-    console.log( carta );
-
     // Devoler la última carta removida de la baraja
     return carta;
 }
@@ -79,8 +71,6 @@ const pedirCarta = () => {
 const valorCarta = ( carta ) => {
     // Obtener string ignorando la última letra
     const valor = carta.substring(0, carta.length - 1);
-
-    console.log( `valorCarta: ${ valor }` );
 
     return ( isNaN( valor ) ) ? 
             ( valor === 'A' ) ? 11 : 10
@@ -93,8 +83,6 @@ const valorCarta = ( carta ) => {
     // } else {
     //     puntos = valor * 1;
     // }
-
-    // console.log( puntos );
 }
 
 /**
@@ -107,8 +95,6 @@ const turnoMaquina = ( puntosMinimos ) => {
 
         // Obtener valor carta y calcular puntaje actual de la máquina
         puntosMaquina = puntosMaquina + valorCarta( carta );
-        console.log( `puntosMaquina: ${ puntosMaquina }` );
-
 
         // Actualizar puntaje en el la vista HTML
         puntosHTML[1].innerText = puntosMaquina;
@@ -157,8 +143,6 @@ btnPedir.addEventListener('click', () => {
 
     // Obtener valor carta y calcular puntaje actual del jugador
     puntosJugador = puntosJugador + valorCarta( carta );
-    console.log( `puntosJugador: ${ puntosJugador }` );
-
 
     // Actualizar puntaje en el la vista HTML
     puntosHTML[0].innerText = puntosJugador;
