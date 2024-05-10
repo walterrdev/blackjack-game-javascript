@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>BlackJack Game in JavaScript</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--/ Bootstrap -->
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--/ Estilos CSS -->
+</head>
+<body>
+    <!-- Título -->
+    <header class="title">BlackJack</header>
+    <!--/ Título -->
+
+    <!-- Botones -->
+    <div class="row mt-2">
+        <div id="botones" class="col text-center">
+            <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
+            <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
+            <button id="btnDetener" class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+    <!--/ Botones -->
+
+    <!-- Jugador -->
+    <div class="row container mt-4">
+        <div class="col">
+            <h1>Jugador - <small>0</small></h1>
+            <div id="cartasJugador">
+                <!-- <img class="carta" src="assets/cartas/2C.png" />
+                <img class="carta" src="assets/cartas/2C.png" />
+                <img class="carta" src="assets/cartas/2C.png" />
+                <img class="carta" src="assets/cartas/2C.png" /> -->
+            </div>
+        </div>
+    </div>
+    <!--/ Jugador -->
+
+    <!-- Máquina -->
+    <div class="row container mt-4">
+        <div class="col">
+            <h1>Máquina - <small>0</small></h1>
+            <div id="cartasMaquina">
+                <!-- <img class="carta" src="assets/cartas/3C.png" />
+                <img class="carta" src="assets/cartas/3C.png" />
+                <img class="carta" src="assets/cartas/3C.png" />
+                <img class="carta" src="assets/cartas/3C.png" /> -->
+            </div>
+        </div>
+    </div>
+    <!--/ Máquina -->
+
+    <!-- Librerías JS -->
+    <script src="assets/js/underscore-min.1.9.1.js"></script>
+    <!-- Librerías JS -->
+
+    <!-- Scripts -->
+    <script src="assets/js/game.js"></script>
+    <!--/ Scripts -->
+</body>
+</html>
