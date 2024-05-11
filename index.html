@@ -23,8 +23,8 @@
     <div class="row mt-2">
         <div id="botones" class="col text-center">
             <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
-            <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
-            <button id="btnDetener" class="btn btn-primary">Detener</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
         </div>
     </div>
     <!--/ Botones -->
@@ -33,7 +33,7 @@
     <div class="row container mt-4">
         <div class="col">
             <h1>Jugador - <small>0</small></h1>
-            <div id="cartasJugador">
+            <div id="jugador" class="cartas">
                 <!-- <img class="carta" src="assets/cartas/2C.png" />
                 <img class="carta" src="assets/cartas/2C.png" />
                 <img class="carta" src="assets/cartas/2C.png" />
@@ -47,7 +47,7 @@
     <div class="row container mt-4">
         <div class="col">
             <h1>Máquina - <small>0</small></h1>
-            <div id="cartasMaquina">
+            <div id="maquina" class="cartas">
                 <!-- <img class="carta" src="assets/cartas/3C.png" />
                 <img class="carta" src="assets/cartas/3C.png" />
                 <img class="carta" src="assets/cartas/3C.png" />
@@ -64,5 +64,12 @@
     <!-- Scripts -->
     <script src="assets/js/game.js"></script>
     <!--/ Scripts -->
+
+    <!-- Iniciar juego -->
+    <script>
+        // Invocar método público
+        modBlackJack.newGame();
+    </script>
+    <!--/ Iniciar juego -->
 </body>
 </html>

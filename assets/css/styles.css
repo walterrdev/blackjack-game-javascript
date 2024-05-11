@@ -9,13 +9,12 @@ html, body{
     color: white;
     font-size: 25px;
 }
+.cartas{
+    height: 240px;
+}
 .carta{
     position: relative;
     width: 150px;
     left: 100px;
     margin-left: -75px;
-}
-#cartasJugador,
-#cartasMaquina{
-    height: 240px;
 }
