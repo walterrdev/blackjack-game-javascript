@@ -1,7 +1,7 @@
 # BlackJack Game in JavaScript
 
-Juego de BlackJack en HTML5, CSS y JavaScript realizado en el curso "JavaScript Moderno: Guía para dominar el lenguaje" de Fernando Herrera.
+BlackJack game in HTML5, CSS and JavaScript made in the course "Modern JavaScript: Guide to mastering the language" by Fernando Herrera.
 
-Link al curso en Udemy:
+Link to course on Udemy:<br>
 https://udemy.com/course/javascript-fernando-herrera/
 
